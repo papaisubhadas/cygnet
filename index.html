@@ -1,0 +1,713 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    
+    
+    <link rel="stylesheet" href="node_assets/css/styles.css?v=4">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div id="app" class="home">
+        <div class="wrapper-loader">
+            <div class="loader"></div>
+        </div>
+
+        <header id="header-wrapper">
+            <div class="blur-overlay"></div>
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="node_assets/images/logo/newlogo.png" class="logo-dark img-webp" alt="img">
+                            <img src="node_assets/images/logo/logor.jpg" class="logo-white img-webp" alt="img">
+                        </a>
+                    </div>
+                    <div class="header-right">
+                        <nav class="main-menu">
+                            <ul id="menu">
+                                <li>
+                                    <a v-html="$t('t_header.t_menu[0]')" href="index.html">Home</a>
+                                </li>
+                                <!-- <li class="dropdown">
+                                    <a v-html="$t('t_header.t_menu[1]')" href="#">
+                                        Product Detail
+                                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a v-html="$t('t_header.t_product_detail[0]')" href="virtual-tour-creator.html">Virtual Tour Creator</a>
+                                        </li>
+                                        <li>
+                                            <a v-html="$t('t_header.t_product_detail[1]')" href="moderator.html">Street View Publishing</a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                                <li>
+                                    <a v-html="$t('t_header.t_menu[2]')" href="#">About</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        Services
+                                    </a>
+                                    
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                        contact us
+                                    </a>
+                                    
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </nav>
+                        <div class="mobile-menu">
+                            <ul id="navigation" class="slimmenu">
+                                <li>
+                                    <a v-html="$t('t_header.t_menu[0]')" href="index.html">Home</a>
+                                </li>
+                                <!-- <li class="dropdown">
+                                    <a v-html="$t('t_header.t_menu[1]')" href="#">
+                                        Product Detail
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a v-html="$t('t_header.t_product_detail[0]')" href="virtual-tour-creator.html">Virtual Tour Creator</a>
+                                        </li>
+                                        <li>
+                                            <a v-html="$t('t_header.t_product_detail[1]')" href="moderator.html">Street View Publishing</a>
+                                        </li>
+                                    </ul>
+                                </li> -->
+                                <li>
+                                    <a v-html="$t('t_header.t_menu[2]')" href="#">About</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                       Services
+                                        <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+                                    </a>
+                                   
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#">
+                                       contact us
+                                        <!-- <i class="fa fa-angle-down" aria-hidden="true"></i> -->
+                                    </a>
+                                   
+                                </li>
+                                
+                                
+                                
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+        </header>
+        <!-- ============ END HEADER ============== -->
+
+        <!-- ============ START LANGUAGE ============== -->
+        
+        <!-- ============ END LANGUAGE ============== -->
+
+        <div class="start-fixed-navigate"></div>
+
+        <!-- ============ START BANNER ============== -->
+        <section id="banner-wrapper" class="banner-overlay">
+            <div class="wrapper-embed-full">
+                <iframe id="iframe-data" src="https://tourmkr.com/F1XrnWv5EJ/37315718p&20.28h&90t/noZoom&noInteract"
+                    loading="lazy" frameborder="0" width="100%" height="100%" scrolling="no"></iframe>
+            </div>
+        </section>
+        <!-- ============ END BANNER ============== -->
+
+        <!-- ============ START ALL ============== -->
+        <section id="gothru-feature" class="bg-white base-section gothru-feature">
+            <div id="particles-js"></div>
+
+            <div class="text-center">
+                <h2 v-html="$t('t_body.t_feature.t_title')" class="text-dark">ABOUT</h2>
+                <!-- <h2 class="title-dark">GoThru will help you</h2> -->
+            </div>
+
+            <div class="border-container">
+                <div class="bootstrap-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="node_assets/images/home/features/1.png" alt="img">
+                                    </div>
+                                    <h3 v-html="$t('t_body.t_feature.t_item[0].t_title')">
+                                       Lorem lipsum
+                                    </h3>
+                                </div>
+                                <p v-html="$t('t_body.t_feature.t_item[0].t_description')">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="node_assets/images/home/features/2.png" alt="img">
+                                    </div>
+                                    <h3 v-html="$t('t_body.t_feature.t_item[1].t_title')">
+                                        Lorem lipsum
+                                    </h3>
+                                </div>
+                                <p v-html="$t('t_body.t_feature.t_item[1].t_description')">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="node_assets/images/home/features/3.png" alt="img">
+                                    </div>
+                                    <h3 v-html="$t('t_body.t_feature.t_item[2].t_title')">
+                                       Lorem lipsum
+                                    </h3>
+                                </div>
+                                <p v-html="$t('t_body.t_feature.t_item[2].t_description')">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="node_assets/images/home/features/4.png" alt="img">
+                                    </div>
+                                    <h3 v-html="$t('t_body.t_feature.t_item[3].t_title')">
+                                        Lorem lipsum
+                                    </h3>
+                                </div>
+                                <p v-html="$t('t_body.t_feature.t_item[3].t_description')">
+                                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="node_assets/images/home/features/5.png" alt="img">
+                                    </div>
+                                    <h3 v-html="$t('t_body.t_feature.t_item[4].t_title')">
+                                         Lorem lipsum
+                                    </h3>
+                                </div>
+                                <p v-html="$t('t_body.t_feature.t_item[4].t_description')">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="feature-item">
+                                <div class="d-flex">
+                                    <div>
+                                        <img src="node_assets/images/home/features/6.png" alt="img">
+                                    </div>
+                                    <h3 v-html="$t('t_body.t_feature.t_item[5].t_title')">
+                                         Lorem lipsum
+                                    </h3>
+                                </div>
+                                <p v-html="$t('t_body.t_feature.t_item[5].t_description')">
+                                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+                        <div class="col-lg-10 offset-lg-1">
+                            <div class="gothru-video">
+                                <div itemscope itemtype="https://schema.org/VideoObject"><meta itemprop="uploadDate" content="Mon May 23 2022 01:02:00 GMT+0700 (Western Indonesia Time)"/><meta itemprop="name" content="Brand Video 1080"/><meta itemprop="description" content="Publish to Google Street View. Create Virtual Tours for Real Estate and Retail Stores. Create 360 Videos for Social Media."/><meta itemprop="duration" content="P0Y0M0DT0H0M22S" /><meta itemprop="thumbnailUrl" content="https://content.jwplatform.com/thumbs/OYovPSXp-1920.jpg"/><meta itemprop="contentUrl" content="https://content.jwplatform.com/videos/OYovPSXp-x9MZRxW2.mp4"/><script src="https://cdn.jwplayer.com/players/OYovPSXp-q88uqfTj.js"></script></div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+            <div class="bootstrap-wrapper">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div class="gothru-video">
+                            <div itemscope itemtype="https://schema.org/VideoObject">
+                                <meta itemprop="uploadDate"
+                                    content="Mon Mar 28 2022 22:27:12 GMT+0700 (Western Indonesia Time)" />
+                                <meta itemprop="name" content="Brand Video 1080" />
+                                <meta itemprop="duration" content="P0Y0M0DT0H0M22S" />
+                                <meta itemprop="thumbnailUrl"
+                                    content="https://content.jwplatform.com/thumbs/iyWkjCor-1920.jpg" />
+                                <meta itemprop="contentUrl"
+                                    content="https://content.jwplatform.com/videos/iyWkjCor-xXTN4HFf.mp4" />
+                                <script src="https://cdn.jwplayer.com/players/iyWkjCor-BXmmCCDo.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </section> -->
+        <!-- ============ END ALL BANNER ============== -->
+
+        <!-- ============ START CREATER-BOX ============== -->
+        <section class="creater-box-container" id="mid-section-wrapper">
+            <!-- <img src="node_assets/images/home/moderator/scroll_main_tour.png" class="overlay-img street-view-img img-webp" alt="img"> -->
+            <img src="node_assets/images/home/moderator/scroll_menu.jpg" class="img-editor-menu img-webp" alt="img">
+            <!-- <img src="node_assets/images/home/moderator/scroll_editor-pulgin-manager.jpg" class="img-plugin-manager img-webp" alt="img"> -->
+            <div class="red-line"></div>
+
+            <!-- ======== Section Street View & Moderator ======== -->
+            
+            <!-- ======== End Section Street View & Moderator ======== -->
+            
+        </section>
+        <!-- ============ END CREATER-BOX ============== -->
+
+
+        <!-- ============ START CLIENTS ============== -->
+        <section id="clients-wrapper" class="bg-white">
+            
+
+        </section>
+        <!-- ============ END CLIENTS ============== -->
+
+        <!-- ============ START INDUSTRIES ============== -->
+        <div id="industries-wrapper">
+            <div id="particles-dark"></div>
+            <div class="our-industries-title border-container">
+                <h2 v-html="$t('t_body.t_industries.t_title')">Services</h2>
+                <div class="bootstrap-wrapper">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/RealEstate.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[0]')">Real Estate</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Rentals.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[1]')">Rentals</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Construction.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[2]')">Construction</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Architecture.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[3]')">Architecture</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Education.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[4]')">Education</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Tourism.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[5]')">Tourism</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Hospitaly.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[6]')">Hospitality</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Museums.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[7]')">Art & Museums</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/AutomotivClient.jpeg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[8]')">Automotive</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/RetailClient.jpeg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[9]')">Retail</h4>
+                                </div>
+                                <a href="#"
+                                    class="link" target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Fitness.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[10]')">Fitness</h4>
+                                </div>
+                                <a href="" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="item-industry">
+                                <img src="node_assets/images/home/industries/Healthcare.jpg" />
+                                <div class="overlay"></div>
+                                <div class="content">
+                                    <h4 v-html="$t('t_body.t_industries.t_industries_list[11]')">Healthcare</h4>
+                                </div>
+                                <a href="#" class="link"
+                                    target=”_blank” rel=””></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="client-say" class="border-container">
+                <div class="what-client-say-title text-center">
+                    <h3 v-html="$t('t_photographers.t_title')">Testimonial</h3>
+                </div>
+                <div class="what-client-say-content">
+                    <ul class="owl-carousel">
+                        <li>
+                            <div class="d-flex">
+                                <div class="quote-img">
+                                    <img src="node_assets/images/icon/quote.png" alt="img">
+                                </div>
+                                <p v-html="$t('t_photographers.t_photographer[0].t_testimonial')">
+                                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+                            <div class="quote-footer">
+                                <table>
+                                    <tr>
+                                        <td style="width: 75px;">
+                                            <img src="node_assets/images/home/testimonial/michael.jpeg" alt="img" />
+                                        </td>
+                                        <td>
+                                            <a href="https://360rumors.com/" target=”_blank” rel=”noopener”>
+                                                <h6>~ Michael  </h6>
+                                            </a>
+                                            <!-- <a href="#">
+                        <span>Video Review</span>
+                      </a> -->
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex">
+                                <div class="quote-img">
+                                    <img src="node_assets/images/icon/quote.png" alt="img">
+                                </div>
+                                <p v-html="$t('t_photographers.t_photographer[1].t_testimonial')">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+                            <div class="quote-footer">
+                                <table>
+                                    <tr>
+                                        <td style="width: 75px;">
+                                            <img src="node_assets/images/home/testimonial/huge.jpeg" alt="img" />
+                                        </td>
+                                        <td>
+                                            <a href="https://www.youtube.com/c/HughHouFilm/videos" target=”_blank”
+                                                rel=”noopener”>
+                                                <h6>~ Hugh Hou</h6>
+                                            </a>
+                                           
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex">
+                                <div class="quote-img">
+                                    <img src="node_assets/images/icon/quote.png" alt="img">
+                                </div>
+                                <p v-html="$t('t_photographers.t_photographer[2].t_testimonial')">
+                                   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                                </p>
+                            </div>
+                            <div class="quote-footer">
+                                <table>
+                                    <tr>
+                                        <td style="width: 75px;">
+                                            <img src="node_assets/images/home/testimonial/nick.jpeg" alt="img" />
+                                        </td>
+                                        <td>
+                                            <a href="https://nickpowellphotography.com/" target=”_blank” rel=”noopener”>
+                                                <h6>~ Nick Powell</h6>
+                                            </a>
+                                           
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="industries-bottom" class="border-container">
+                <div class="industries-bottom"></div>
+            </div>
+        </div>
+        <!-- ============ END INDUSTRIES ============== -->
+
+        <!-- ============ START OUR-PLANS ============== -->
+        <section id="our-plans-wrapper" class="bg-white">
+        </section>
+        <!-- ============ END OUR-PLANS ============== -->
+
+        <!-- ============ START COMMON ============== -->
+        <section id="common-questions-wrapper">
+            <div class="border-container border-right inverse">
+                <div class="common-questions">
+                    <div class="common-questions-left">
+                        <div class="question-img">
+                            <img src="node_assets/images/icon/question.png" alt="img">
+                        </div>
+                        <h3 v-html="$t('t_body.t_common_questions.t_title')">
+                            FAQ
+                            <br>
+                            Questions
+                        </h3>
+                        
+                    </div>
+                    <div class="common-questions-right">
+                        <div class="cq-box">
+                            <h3 class="accordion" v-html="$t('t_body.t_common_questions.t_questions[0].t_question')">Lorem Ipsum is simply dummy text ?</h3>
+                            <div class="panel">
+                                <p v-html="$t('t_body.t_common_questions.t_questions[0].t_answer')">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="cq-box">
+                            <h3 class="accordion" v-html="$t('t_body.t_common_questions.t_questions[1].t_question')">Lorem Ipsum is simply dummy text ?</h3>
+                            <div class="panel">
+                                <p v-html="$t('t_body.t_common_questions.t_questions[1].t_answer')">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="cq-box">
+                            <h3 class="accordion" v-html="$t('t_body.t_common_questions.t_questions[2].t_question')">Lorem Ipsum is simply dummy text ?</h3>
+                            <div class="panel">
+                                <p v-html="$t('t_body.t_common_questions.t_questions[2].t_answer')">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                        <div class="cq-box">
+                            <h3 class="accordion" v-html="$t('t_body.t_common_questions.t_questions[3].t_question')">Lorem Ipsum is simply dummy text ?</h3>
+                            <div class="panel">
+                                <p v-html="$t('t_body.t_common_questions.t_questions[3].t_answer')">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ============ END COMMON ============== -->
+
+        <!-- ============ START FOOTER ============== -->
+        <footer id="footer-wrapper">
+            <div class="footer">
+                <div class="border-container" style="position: relative;">
+                    
+                    <div class="footer-support">
+                        <a href="#">
+                            <img src="node_assets/images/icon/support.png" alt="img">
+                        </a>
+                    </div>
+                    <div class="footer-menu-wrapper">
+                        <div class="footer-menu f-menu">
+                            <h3 v-html="$t('t_footer.t_list_menu[0].t_title')">Menu</h3>
+                            <ul>
+                                <li>
+                                    <a href="#" v-html="$t('t_footer.t_list_menu[0].t_list_item[0]')">About</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                        <div class="footer-menu f-products">
+                            <h3 v-html="$t('t_footer.t_list_menu[1].t_title')">Service</h3>
+                            <ul>
+                                <li>
+                                    <a href="virtual-tour-creator.html" v-html="$t('t_footer.t_list_menu[1].t_list_item[0]')">Services</a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="footer-menu f-products">
+                            <h3>Menu</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">example1</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu f-support">
+                            <h3 v-html="$t('t_footer.t_list_menu[2].t_title')">Support</h3>
+                            <ul>
+
+                                
+                                
+                                
+                                
+                                
+                                <li>
+                                    <a href="terms-of-service.html" target=”_blank” v-html="$t('t_footer.t_list_menu[2].t_list_item[5]')">Terms of Service
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="privacy-policy.html" target=”_blank” rel=”noopener” v-html="$t('t_footer.t_list_menu[2].t_list_item[6]')">Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu f-help">
+                            <h3 v-html="$t('t_footer.t_list_menu[3].t_title')">Need Help?</h3>
+                            <ul>
+                                <li>
+                                    <a href="#">1234567890
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:info@gmail.com">info@gmail.com
+                                    </a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-container">
+                    <div class="footer-copyright">
+                        <div class="copyright-left">
+                            <p v-html="$t('t_footer.t_copyright.t_title')">2023 @ All Rights Reserved </p>
+                            
+                        </div>
+                        <div class="footer-social">
+                            <ul>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" target="_blank">
+                                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="tel:1234567890" target="_blank">
+                                        <i class="fa fa-phone" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- ============ END FOOTER ============== -->
+    </div>
+    
+    <script src="node_assets/js/jquery.js"></script>
+    <script src="node_assets/js/lodash.js"></script>
+    <script src="node_assets/js/moment.js"></script>
+    <script src="node_assets/js/owl.carousel.min.js"></script>
+    <script src="node_assets/js/axios.min.js"></script>
+    
+    <script src="node_assets/js/vue.js"></script>
+    <script src="node_assets/js/vue-i18n.js"></script>
+    <script src="node_assets/js/vuex.js"></script>
+    <script src="node_assets/js/jquery.slimmenu.min.js"></script>
+    <script type="text/javascript" async render src="https://apis.google.com/js/platform.js?onload=renderButton">
+    </script>
+    <script src="node_assets/js/jquery.matchHeight.js"></script>
+    <script src="node_assets/js/particles.min.js?v=4"></script>
+    <script src="dist/main.js?v=4"></script>
+    <script src="node_assets/js/custom.js?v=4"></script>    
+
+</body>
+
+</html>
